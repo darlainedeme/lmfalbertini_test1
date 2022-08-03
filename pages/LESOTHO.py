@@ -12,7 +12,7 @@ url4 = 'sdgs.un.org/goals/goal7'
 if st.button('SDG 7'):
     webbrowser.open_new_tab(url4)
 
-    open("layout.pdf", "rb") as pdf_file:
+with open("layout.pdf", "rb") as pdf_file:
     PDFbyte = pdf_file.read()
 
     st.download_button(label="Download FAC-SIMILE",
