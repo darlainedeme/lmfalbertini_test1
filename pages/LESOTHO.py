@@ -13,8 +13,6 @@ url4 = 'sdgs.un.org/goals/goal7'
 if st.button('SDG 7'):
     webbrowser.open_new_tab(url4)
 
-st.write(str(os.getcwd()))
-
 with open("Layout.pdf", "rb") as pdf_file:
     PDFbyte = pdf_file.read()
     
