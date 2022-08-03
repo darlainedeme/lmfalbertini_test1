@@ -15,7 +15,7 @@ if st.button('SDG 7'):
 
 with open("layout.pdf", "rb") as pdf_file:
     PDFbyte = pdf_file.read()
-    st.write(os.get_cwd())
+    st.write(os.getcwd())
 
     st.download_button(label="Download FAC-SIMILE",
                        data=PDFbyte,
