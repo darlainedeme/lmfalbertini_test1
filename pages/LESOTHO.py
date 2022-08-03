@@ -15,7 +15,7 @@ if st.button('SDG 7'):
 
 st.write(str(os.getcwd()))
 
-with open("layout.pdf", "rb") as pdf_file:
+with open("Layout.pdf", "rb") as pdf_file:
     PDFbyte = pdf_file.read()
     
 
