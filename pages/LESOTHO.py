@@ -3,6 +3,7 @@ import streamlit as st
 import altair as alt
 import webbrowser
 from PIL import Image
+import os
 
 st.title("Leshoto")
 
@@ -14,6 +15,7 @@ if st.button('SDG 7'):
 
 with open("layout.pdf", "rb") as pdf_file:
     PDFbyte = pdf_file.read()
+    st.write(os.get_cwd())
 
     st.download_button(label="Download FAC-SIMILE",
                        data=PDFbyte,
